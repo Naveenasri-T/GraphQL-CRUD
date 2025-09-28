@@ -1,7 +1,7 @@
 import strawberry
 from typing import List, Optional
 from sqlalchemy.orm import Session
-from .database import get_db, engine, SessionLocal
+from .database import engine, SessionLocal
 from .models import Base, User
 
 Base.metadata.create_all(bind=engine)
